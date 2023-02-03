@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style type="text/css">
+      /*email reset  */
+      /* CLIENT-SPECIFIC STYLES */
+      body,
+      table,
+      td,
+      a {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+      table,
+      td {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+
+      /* RESET STYLES */
+      img {
+        border: 0;
+        height: auto;
+        line-height: 100%;
+        outline: none;
+        text-decoration: none;
+      }
+      table {
+        border-collapse: collapse !important;
+      }
+      body {
+        height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+      }
+
+      /* iOS BLUE LINKS */
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      /* GMAIL BLUE LINKS */
+      u + #body a {
+        color: inherit;
+        text-decoration: none;
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+      }
+
+      /* SAMSUNG MAIL BLUE LINKS */
+      #MessageViewBody a {
+        color: inherit;
+        text-decoration: none;
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+      }
+
+      /* end of reset */
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .email td {
+        padding: 16px;
+      }
+
+      .header-table a {
+        text-decoration: none;
+        color: rgb(21, 79, 21);
+        font-weight: 700;
+      }
+
+      .header-links a {
+        float: left;
+      }
+
+      .flash-sale {
+        animation: flash 0.5s ease-in-out infinite;
+      }
+
+      .email-footer a {
+        text-decoration: none;
+        color: #4a4a4a;
+        font-size: 18px;
+        margin: 8px;
+      }
+      @media screen and (max-width: 600px) {
+        .email {
+          width: 100% !important;
+        }
+
+        .alert {
+          font-size: 12px !important;
+        }
+
+        .header-logo,
+        .header-links {
+          width: 100% !important;
+          display: block !important;
+          text-align: center !important;
+        }
+
+        .header-logo {
+          margin-bottom: 16px !important;
+        }
+
+        .sale h1 {
+          font-size: 1.8rem !important;
+        }
+
+        .hero-image {
+          padding: 16px 8px 16px 8px !important;
+        }
+
+        .hero-image img {
+          height: 330px !important;
+        }
+
+        .coupon-code a {
+          line-height: 50px !important;
+          width: 150px !important;
+        }
+
+        .featured-img {
+          object-fit: cover !important;
+        }
+        .featured-img,
+        .featured-text {
+          display: block !important;
+          width: 100% !important;
+          padding: 0 !important;
+        }
+
+        .featured-wrapper {
+          padding: 32px 16px 32px 16px !important;
+        }
+      }
+
+      @keyframes flash {
+        from {
+          color: #fcfcfc;
+        }
+
+        to {
+          color: rgb(221, 166, 160);
+        }
+      }
+    </style>
+  </head>
+  <body
+    id="body"
+    style="
+      margin: 0 !important;
+      padding: 0 !important;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ededed;
+    "
+  >
+    <div>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td align="center">
+            <!-- whole email table -->
+            <table
+              class="email"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              width="600"
+            >
+              <!-- free shipping -->
+              <tr>
+                <td
+                  class="alert"
+                  style="
+                    background-color: rgb(21, 79, 21);
+                    color: #fcfcfc;
+                    letter-spacing: 1px;
+                    font-size: 14px;
+                    padding: 8px;
+                  "
+                >
+                  <p style="text-align: center">
+                    <strong>Free Shipping on Orders Over $75</strong>
+                  </p>
+                </td>
+              </tr>
+              <!-- free shipping -->
+
+              <!-- header -->
+              <tr>
+                <td style="background-color: #fcfcfc">
+                  <table
+                    class="header-table"
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                    width="100%"
+                  >
+                    <tr>
+                      <td
+                        class="header-logo"
+                        style="width: 35%; vertical-align: middle; padding: 0"
+                        align="left"
+                      >
+                        <a href="#" style="font-size: 2rem">
+                          <span>
+                            <i class="fa-brands fa-pagelines"></i>
+                          </span>
+                          Flora
+                        </a>
+                      </td>
+
+                      <td
+                        class="header-links"
+                        style="width: 60%; vertical-align: middle; padding: 0"
+                        align="right"
+                      >
+                        <a href="#" style="width: 25%; display: inline-block"
+                          >about</a
+                        >
+                        <a href="#" style="width: 25%; display: inline-block"
+                          >flowers</a
+                        >
+                        <a href="#" style="width: 25%; display: inline-block"
+                          >plants</a
+                        >
+                        <a href="#" style="width: 25%; display: inline-block"
+                          >order</a
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- header -->
+
+              <!-- heading -->
+              <tr>
+                <td
+                  class="sale"
+                  style="
+                    background-color: rgb(21, 79, 21);
+                    text-align: center;
+                    color: #fcfcfc;
+                    letter-spacing: 1px;
+                  "
+                >
+                  <h1 class="flash-sale">ALL LOVERS SALE</h1>
+                </td>
+              </tr>
+              <!-- heading -->
+
+              <!-- hero image -->
+              <tr>
+                <td class="hero-image" style="background-color: #fcfcfc">
+                  <img
+                    style="border-radius: 5px"
+                    src="https://assets.vogue.com/photos/593f05fa9d94cb14039a9e4e/master/w_2560%2Cc_limit/00-lede%2520(3).jpg"
+                    alt=""
+                  />
+                </td>
+              </tr>
+              <!-- hero image -->
+
+              <!-- coupon code -->
+              <tr>
+                <td
+                  class="coupon-code"
+                  style="
+                    background-color: rgb(221, 166, 160);
+                    color: rgb(21, 79, 21);
+                    text-align: center;
+                    padding-top: 32px;
+                    padding-bottom: 32px;
+                  "
+                >
+                  <h2 style="margin-bottom: 0; font-weight: normal">
+                    Get 20% off on your next purchase
+                  </h2>
+                  <p style="margin-top: 4px; margin-bottom: 32px">
+                    <strong>Use code:</strong>
+                    <span
+                      style="
+                        display: inline-block;
+                        background-color: rgb(21, 79, 21);
+                        color: rgb(221, 166, 160);
+                        padding: 2px 4px 2px 4px;
+                        font-weight: bold;
+                      "
+                      >Lovers23</span
+                    >
+                  </p>
+
+                  <div>
+                    <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:60px;v-text-anchor:middle;width:200px;" arcsize="7%" stroke="f" fillcolor="#247558">
+                      <w:anchorlock/>
+                      <center>
+                    <![endif]-->
+                    <a
+                      href="http://"
+                      style="
+                        background-color: rgb(21, 79, 21);
+                        border-radius: 4px;
+                        color: #ffffff;
+                        display: inline-block;
+                        font-family: sans-serif;
+                        font-size: 16px;
+                        font-weight: bold;
+                        line-height: 60px;
+                        text-align: center;
+                        text-decoration: none;
+                        width: 200px;
+                        -webkit-text-size-adjust: none;
+                      "
+                      >Shop Now</a
+                    >
+                    <!--[if mso]>
+                      </center>
+                    </v:roundrect>
+                  <![endif]-->
+                  </div>
+                </td>
+              </tr>
+
+              <!-- coupon code -->
+
+              <!-- featured -->
+              <tr>
+                <td class="featured-wrapper" style="background-color: #fcfcfc">
+                  <table
+                    class="featured-table"
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                    width="100%"
+                  >
+                    <tr>
+                      <td
+                        class="featured-img"
+                        style="width: 48%; padding: 0"
+                        align="left"
+                      >
+                        <img
+                          style="height: 275px"
+                          src="https://www.tinys-flowers.com/assets/1/14/DimFeatured/183988xlx.jpg?253122&value=184"
+                          alt="flowers"
+                        />
+                      </td>
+
+                      <td class="featured-text" style="width: 48%" align="left">
+                        <h2 style="color: rgb(21, 79, 21)">Featured</h2>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Assumenda cum vitae, officia hic eius animi.
+                        </p>
+
+                        <div>
+                          <!--[if mso]>
+                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:60px;v-text-anchor:middle;width:200px;" arcsize="7%" stroke="f" fillcolor="#247558">
+                              <w:anchorlock/>
+                              <center>
+                            <![endif]-->
+                          <a
+                            href="http://"
+                            style="
+                              background-color: rgb(21, 79, 21);
+                              border-radius: 4px;
+                              color: #ffffff;
+                              display: inline-block;
+                              font-family: sans-serif;
+                              font-size: 13px;
+                              font-weight: bold;
+                              line-height: 40px;
+                              text-align: center;
+                              text-decoration: none;
+                              width: 125px;
+                              -webkit-text-size-adjust: none;
+                            "
+                            >Find Out More</a
+                          >
+                          <!--[if mso]>
+                              </center>
+                            </v:roundrect>
+                          <![endif]-->
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- featured -->
+
+              <!-- new arrivals -->
+              <tr>
+                <td
+                  style="
+                    text-align: center;
+                    background-color: rgb(221, 166, 160);
+                    padding-top: 32px;
+                    padding-bottom: 0;
+                  "
+                >
+                  <h2
+                    style="
+                      display: inline-block;
+                      margin: 0;
+                      padding-bottom: 4px;
+                      padding-left: 4px;
+                      padding-right: 4px;
+                      border-bottom: 1px solid;
+                      color: rgb(21, 79, 21);
+                    "
+                  >
+                    New Arrivals
+                  </h2>
+                  <p style="font-size: 14px; color: #4a4a4a">
+                    Check out our new selection, in time for the season
+                  </p>
+                </td>
+              </tr>
+              <!-- new arrivals -->
+
+              <!-- arrivals table -->
+              <tr>
+                <td style="background-color: rgb(221, 166, 160)">
+                  <table
+                    class="arrivals-table"
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                    width="100%"
+                  >
+                    <tr>
+                      <td style="width: 45%; padding: 0">
+                        <img
+                          style="height: 200px"
+                          src="https://www.avasflowers.net/img/prod_img/avasflowers-my-sun-moon-and-stars-bouquet.jpg"
+                          alt=""
+                        />
+                      </td>
+
+                      <td style="width: 45%">
+                        <h3 style="color: rgb(21, 79, 21); margin-bottom: 8px">
+                          Lavender Medley
+                        </h3>
+                        <p style="color: #4a4a4a; margin: 2px 0 16px 0">
+                          Lorem ipsum dolor sit amet consectetur
+                        </p>
+                        <a
+                          href="#"
+                          style="
+                            color: rgb(21, 79, 21);
+                            font-weight: 700;
+                            background-color: #fcfcfc;
+                            display: inline-block;
+                            text-decoration: none;
+                            padding: 8px;
+                            border-radius: 3px;
+                            font-size: 14px;
+                          "
+                          >Buy it</a
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="background-color: rgb(221, 166, 160)">
+                  <table
+                    class="arrivals-table"
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                    width="100%"
+                  >
+                    <tr>
+                      <td style="width: 45%; padding: 0">
+                        <img
+                          style="height: 200px"
+                          src="https://cdn3.1800flowers.com/wcsstore/Flowers/images/catalog/179054lx.jpg?height=456&width=418&sharpen=a0.5,r1,t1&quality=80&auto=webp&optimize={medium}"
+                          alt=""
+                        />
+                      </td>
+
+                      <td style="width: 45%">
+                        <h3 style="color: rgb(21, 79, 21); margin-bottom: 8px">
+                          Natural Beauqet
+                        </h3>
+                        <p style="color: #4a4a4a; margin: 2px 0 16px 0">
+                          Lorem ipsum dolor sit amet consectetur
+                        </p>
+                        <a
+                          href="#"
+                          style="
+                            color: rgb(21, 79, 21);
+                            font-weight: 700;
+                            background-color: #fcfcfc;
+                            display: inline-block;
+                            text-decoration: none;
+                            padding: 8px;
+                            border-radius: 3px;
+                            font-size: 14px;
+                          "
+                          >Buy it</a
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="background-color: rgb(221, 166, 160)">
+                  <table
+                    class="arrivals-table"
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                    width="100%"
+                  >
+                    <tr>
+                      <td style="width: 45%; padding: 0">
+                        <img
+                          style="height: 200px"
+                          src="https://i.shgcdn.com/67cbb1e9-d06a-41b1-9b09-cde887eaf908/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+                          alt=""
+                        />
+                      </td>
+
+                      <td style="width: 45%">
+                        <h3 style="color: rgb(21, 79, 21); margin-bottom: 8px">
+                          Shades of Pink
+                        </h3>
+                        <p style="color: #4a4a4a; margin: 2px 0 16px 0">
+                          Lorem ipsum dolor sit amet consectetur
+                        </p>
+                        <a
+                          href="#"
+                          style="
+                            color: rgb(21, 79, 21);
+                            font-weight: 700;
+                            background-color: #fcfcfc;
+                            display: inline-block;
+                            text-decoration: none;
+                            padding: 8px;
+                            border-radius: 3px;
+                            font-size: 14px;
+                          "
+                          >Buy it</a
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- arrivals table -->
+
+              <!-- see more button -->
+              <tr>
+                <td
+                  style="
+                    text-align: center;
+                    background-color: rgb(221, 166, 160);
+                    padding-bottom: 32px;
+                  "
+                >
+                  <div>
+                    <!--[if mso]>
+                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:60px;v-text-anchor:middle;width:200px;" arcsize="7%" stroke="f" fillcolor="#247558">
+                          <w:anchorlock/>
+                          <center>
+                        <![endif]-->
+                    <a
+                      href="http://"
+                      style="
+                        background-color: rgb(21, 79, 21);
+                        border-radius: 4px;
+                        color: #ffffff;
+                        display: inline-block;
+                        font-family: sans-serif;
+                        font-size: 18px;
+                        font-weight: bold;
+                        line-height: 60px;
+                        text-align: center;
+                        text-decoration: none;
+                        width: 200px;
+                        -webkit-text-size-adjust: none;
+                      "
+                      >See More</a
+                    >
+                    <!--[if mso]>
+                          </center>
+                        </v:roundrect>
+                      <![endif]-->
+                  </div>
+                </td>
+              </tr>
+              <!-- see more button -->
+
+              <!-- footer -->
+              <tr>
+                <td
+                  class="email-footer"
+                  style="text-align: center; color: rgb(21, 79, 21)"
+                >
+                  <h2>Flora</h2>
+                  <div>
+                    <a href="#">
+                      <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-youtube"></i>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <!-- footer -->
+
+              <!-- footer copy -->
+              <tr>
+                <td style="font-size: 11px">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fuga, quas ipsam minus veritatis sunt iusto sed pariatur
+                    quae qui voluptatibus.
+                  </p>
+
+                  <p>
+                    This email was sent to
+                    <a href="#">flowerlutos@mymail.com</a>
+                  </p>
+
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fuga, quas ipsam minus veritatis sunt iusto sed pariatur
+                    quae qui voluptatibus. Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Sed, natus?
+                  </p>
+
+                  <p>
+                    click the link to
+                    <a href="#">unsubscribe</a>
+                  </p>
+
+                  <p>flora &copy; 2023</p>
+                </td>
+              </tr>
+              <!-- f
+              <!-- footer copy -->
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
